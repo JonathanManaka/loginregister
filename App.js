@@ -1,27 +1,21 @@
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/home_screen';
+import LoginScreen from './screens/login_screen';
+import SignUpScreen from './screens/signup_screen';
 
-import { StyleSheet, View, StatusBar,Image,Text } from 'react-native';
-
+const Stack = createNativeStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar></StatusBar>
-      <Image source={require('./assets/images/landing_image.png')} style={styles.landingImgStyle}/>
-      <Text>Enterprise Team
-      Management</Text>
-  
-      
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="Signup" component={SignUpScreen} options={{headerShown: false}}/>
+    </Stack.Navigator>
+  </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-    alignItems: 'center',
-    justifyContent: 'start',
-  },
-  landingImgStyle: {
-    marginTop: 150,
-  },  
-});
+
