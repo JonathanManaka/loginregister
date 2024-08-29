@@ -24,7 +24,7 @@ Weather app
 - (Zustand)
 
 ## 🎨 Design
-- inspired by this figma UI by ataullah Akram: https://www.figma.com/design/YfXvACWMwD5yM81C0mmZca/Log-In-%26-Registration-UI-Kit-(Community)?node-id=237-3584&t=DbmvqPmG8QZlMaXZ-1
+- inspired by ataullah Akram Figma UI: https://www.figma.com/design/YfXvACWMwD5yM81C0mmZca/Log-In-%26-Registration-UI-Kit-(Community)?node-id=237-3584&t=DbmvqPmG8QZlMaXZ-1
 
 ## Live preview
 https://github.com/user-attachments/assets/880842f0-bac5-42db-90c8-5a81b7f3dea6
